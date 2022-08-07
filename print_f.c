@@ -14,7 +14,7 @@ int _printf(char *format, ...)
 		while (*format != '%')
 		{
 			if (*format == '\0')
-				return (0);
+				return (count);
 			_writechar(*format);
 			count++;
 			format++;

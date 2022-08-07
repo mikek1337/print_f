@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * writechars - prints all the string to standard output
  * @s: char pointer /string that need to be outputed
@@ -13,5 +14,6 @@ int writechars(char *s)
 		s++;
 		count++;
 	}
+	
 	return (count);
 }
