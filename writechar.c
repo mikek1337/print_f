@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include "main.h"
 /**
  * _writechar - standard output character
  *
@@ -8,5 +8,6 @@
  */
 int _writechar(char c)
 {
-	return (write(1, &c, 1));
+	 return (write(1, &c, 1));
+	
 }
