@@ -27,4 +27,5 @@ int p_char(va_list l);
 int p_binary(va_list l);
 int p_hex(va_list l);
 int p_octal(va_list l);
+int p_percent(va_list l);
 #endif

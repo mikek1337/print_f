@@ -29,3 +29,9 @@ int p_octal(va_list l)
 	s = convert(d, 8);
 	return (writechars(s));
 }
+
+int p_percent(va_list l)
+{
+	char c = va_arg(l, int);
+	return (_writechar(c));
+}

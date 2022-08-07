@@ -17,8 +17,9 @@ int (*choose_print(char format))(va_list)
 		{'x', p_hex},
 		{'b', p_binary},
 		{'o', p_octal},
+		{'%',p_percent}
 	};
-	int choose_list = 7;
+	int choose_list = 8;
 
 	register int i;
 	/** loop through and choose the function that match the format */
