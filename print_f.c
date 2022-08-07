@@ -16,6 +16,7 @@ int _printf(char *format, ...)
 			if (*format == '\0')
 				return (0);
 			_writechar(*format);
+			count++;
 			format++;
 		}
 		format++;
