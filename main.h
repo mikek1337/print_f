@@ -10,17 +10,17 @@
  * @c: format specification
  * @f: function to be choosen
  */
-
 typedef struct print_chooser
 {
-    char c;
-    int (*f)(va_list);
+	char c;
+	int (*f)(va_list);
 } pc;
 
 char *convert(int n, int base);
 int _writechar(char c);
 int writechars(char *s);
 int _printf(char *format, ...);
+int (*choose_print(char format))(va_list l);
 int p_int(va_list l);
 int p_string(va_list l);
 int p_char(va_list l);

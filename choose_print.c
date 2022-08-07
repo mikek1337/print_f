@@ -3,9 +3,9 @@
 #include "main.h"
 /**
  * choose_print - chooses a function form the format
- * 
- * @param format
- * @return int(*)(va_list)
+ *
+ * @format: format character
+ * Return: function pointer
  */
 int (*choose_print(char format))(va_list)
 {

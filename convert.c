@@ -8,11 +8,9 @@
 char *convert(int n, int base)
 {
 
-	char *s = malloc(sizeof(char) * 50);
-	char *rep = {"0123456789ABCDEF"};
-	
-	do
-	{
+	 char *s = malloc(sizeof(char) * 50);
+	 char *rep = { "0123456789ABCDEF" };
+	do {
 		*--s = rep[n % base];
 		n /= base;
 	} while (n != 0);
