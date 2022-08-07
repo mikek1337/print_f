@@ -5,9 +5,9 @@
 #include "main.h"
 int _printf(char *format, ...)
 {
-	va_list args;
-	int count = 0;
-	int (*func)(va_list);
+	 va_list args;
+	 int count = 0;
+	 int (*func)(va_list);
 	va_start(args, format);
 	while (*format != '\0')
 	{
