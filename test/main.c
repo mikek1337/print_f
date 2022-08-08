@@ -7,13 +7,8 @@
  *     */
 int main(void)
 {
-
-
-
-
-					_printf("Test: %s\n", NULL);
-
-
-							_printf("%s\n", NULL);
-								return (0);
+	_printf("Test: %r\n", "mikias");
+	_printf("%R\n","ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+	_printf("%R\n","abcdefghijklmnopqrstuvwxyz");
+	return (0);
 }
