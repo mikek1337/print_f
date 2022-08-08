@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * print_chooser - choose the right functions to print
+ * struct print_chooser - choose the right functions to print
  *
  * @c: format specification
  * @f: function to be choosen

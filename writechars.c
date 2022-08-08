@@ -13,7 +13,6 @@ int writechars(char *s)
 		_writechar(*s);
 		s++;
 		count++;
-	}
-	
+	}	
 	return (count);
 }
