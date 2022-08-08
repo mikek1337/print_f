@@ -30,5 +30,7 @@ int p_HEX(va_list l);
 int p_octal(va_list l);
 int p_percent(va_list l);
 int print_address(va_list l);
+int print_rev(va_list l);
+int print_rot13(va_list l);
 int p_unsigned(va_list l);
 #endif

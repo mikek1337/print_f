@@ -20,9 +20,11 @@ int (*choose_print(char format))(va_list)
 		{'o', p_octal},
 		{'u', p_unsigned},
 		{'p', print_address},
+		{'r', print_rev},
+		{'R', print_rot13},
 		{'%', p_percent}
 	};
-	int choose_list = 11;
+	int choose_list = 12;
 
 	register int i;
 	/** loop through and choose the function that match the format */

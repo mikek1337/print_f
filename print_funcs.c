@@ -31,6 +31,8 @@ int p_string(va_list l)
 {
 	 char *s;
 	s = va_arg(l, char *);
+	if (!s)
+		return (writechars("(null)"));
 	return (writechars(s));
 }
 
