@@ -30,6 +30,11 @@ int p_octal(va_list l)
 	return (writechars(s));
 }
 
+/**
+ * p_percent - prints percent sign
+ * @l: variable list
+ * Return: number of characters printed
+ */
 int p_percent(va_list l)
 {
 	va_arg(l,int);
