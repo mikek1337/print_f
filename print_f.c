@@ -3,6 +3,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "main.h"
+/**
+ * _printf - prints characters based of the format
+ * @format: character format
+ * Return: number of character printed
+ */
 int _printf(char *format, ...)
 {
 	 va_list args;
