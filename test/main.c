@@ -10,5 +10,6 @@ int main(void)
 	_printf("Test: %r\n", "mikias");
 	_printf("%R\n","ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 	_printf("%R\n","abcdefghijklmnopqrstuvwxyz");
+	_printf("%+d\n", 7);
 	return (0);
 }
