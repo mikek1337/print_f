@@ -8,12 +8,19 @@
  */
 char *convert(unsigned long int n, int base, int islowercase)
 {
+	static char *rep;
+	static char buffer[50];
+	char *ptr;
 
-	 char *s = malloc(sizeof(char) * 50);
-	 char *rep = (islowercase) ? "0123456789abcdef" : "0123456789ABCDEF";
+	rep = (islowercase)
+		? "0123456789abcdef"
+		: "0123456789ABCDEF";
+	ptr = &buffer[49];
+	*ptr = '\0';
 	do {
-		*--s = rep[n % base];
+		*--ptr = rep[n % base];
 		n /= base;
 	} while (n != 0);
-	return (s);
+
+	return (ptr);
 }
