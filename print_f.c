@@ -25,6 +25,12 @@ int _printf(char *format, ...)
 			format++;
 		}
 		format++;
+		if (*format == '+')
+		{
+			count += _writechar('+');
+			format++;
+		}
+
 		func = choose_print(*format);
 		if (func == NULL)
 		{
