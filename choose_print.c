@@ -17,7 +17,7 @@ int (*choose_print(char format))(va_list)
 		{'x', p_hex},
 		{'b', p_binary},
 		{'o', p_octal},
-		{'%',p_percent}
+		{'%', p_percent}
 	};
 	int choose_list = 8;
 
