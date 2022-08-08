@@ -31,7 +31,7 @@ int p_string(va_list l)
 {
 	 char *s;
 	s = va_arg(l, char *);
-	if (!s)
+	if (s == NULL)
 		return (writechars("(null)"));
 	return (writechars(s));
 }

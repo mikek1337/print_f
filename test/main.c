@@ -11,5 +11,6 @@ int main(void)
 	_printf("%R\n","ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 	_printf("%R\n","abcdefghijklmnopqrstuvwxyz");
 	_printf("%+d\n", 7);
+	_printf("%s", NULL);
 	return (0);
 }
