@@ -12,7 +12,6 @@ int print_rev(va_list l)
 	 int j;
 	 int i = 0;
 	 char *s = va_arg(l, char *);
-	 
 	while (s[i] != '\0')
 	{
 		i++;
