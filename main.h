@@ -16,7 +16,7 @@ typedef struct print_chooser
 	int (*f)(va_list);
 } pc;
 
-char *convert(int n, int base);
+char *convert(int n, int base, int islowercase);
 int _writechar(char c);
 int writechars(char *s);
 int _printf(char *format, ...);
@@ -26,6 +26,9 @@ int p_string(va_list l);
 int p_char(va_list l);
 int p_binary(va_list l);
 int p_hex(va_list l);
+int p_HEX(va_list l);
 int p_octal(va_list l);
 int p_percent(va_list l);
+int print_address(va_list l);
+int p_unsigned(va_list l);
 #endif

@@ -26,7 +26,15 @@ int _printf(char *format, ...)
 		}
 		format++;
 		func = choose_print(*format);
-		count += func(args);
+		if (func == NULL)
+		{
+			count += _writechar('%');
+			count += _writechar(*format);
+		}
+		else
+		{
+			count += func(args);
+		}
 		format++;
 	}
 	return (count);

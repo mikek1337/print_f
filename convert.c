@@ -3,13 +3,14 @@
  * convert - converts to a specified base
  * @n: number to be converted
  * @base: the base to be converted to
+ * @islowercase: to determine if the hex value is smaller of larger
  * Return: char pointer
  */
-char *convert(int n, int base)
+char *convert(unsigned long int n, int base, int islowercase)
 {
 
 	 char *s = malloc(sizeof(char) * 50);
-	 char *rep = { "0123456789ABCDEF" };
+	 char *rep = (islowercase) ? "0123456789abcdef" : "0123456789ABCDEF";
 	do {
 		*--s = rep[n % base];
 		n /= base;

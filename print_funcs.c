@@ -17,7 +17,7 @@ int p_int(va_list l)
 		d = d * -1;
 		_writechar('-');
 	}
-	s = convert(d, 10);
+	s = convert(d, 10, 0);
 	return (writechars(s));
 }
 
@@ -59,6 +59,6 @@ int p_binary(va_list l)
 	 char *s;
 	 int d;
 	d = va_arg(l, int);
-	s = convert(d, 2);
+	s = convert(d, 2, 0);
 	return (writechars(s));
 }
