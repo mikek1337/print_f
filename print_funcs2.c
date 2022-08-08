@@ -37,6 +37,6 @@ int p_octal(va_list l)
  */
 int p_percent(va_list l)
 {
-	va_arg(l,int);
+	va_arg(l, int);
 	return (_writechar('%'));
 }
